@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feast & Fun | Restaurant & Experiences</title>
+  <meta name="description" content="Book a table, enjoy delicious food, buffet packages and games at Feast & Fun.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#"><span class="brand-icon">✦</span> Feast<span class="amp">&</span>Fun</a>
+    <nav>
+      <a href="#menu">Our Menu</a><a href="#buffet">Buffet</a><a href="#games">Games</a>
+      <a href="#booking" class="nav-book">Book a Table <span>↗</span></a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="dot"></span> GOOD FOOD. GREAT MOMENTS.</div>
+        <h1>Come hungry.<br><em>Leave happy.</em></h1>
+        <p>Big flavours, cozy vibes, and unforgettable moments. Your favourite table is just a booking away.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Reserve your table <span>→</span></a>
+          <a href="#menu" class="btn btn-outline">Explore menu</a>
+        </div>
+        <div class="hero-rating"><span class="stars">★★★★★</span> <strong>4.9</strong> <span>· Loved by foodies</span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c8?auto=format&fit=crop&w=1200&q=85" alt="Warm and stylish restaurant interior">
+        <div class="floating-note"><span>🍝</span><div><strong>Made with love</strong><small>Fresh every day</small></div></div>
+        <div class="image-badge">A little taste<br>of happiness ✨</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>20+</strong><span>Signature dishes</span></div><div><strong>3</strong><span>Buffet experiences</span></div><div><strong>All ages</strong><span>Fun & games</span></div><div><strong>7 days</strong><span>Open every week</span></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading"><div><div class="eyebrow">MADE TO MAKE YOU SMILE</div><h2>Our crowd favourites</h2></div><a class="text-link" href="#booking">Book & taste <span>→</span></a></div>
+      <div class="menu-grid">
+        <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80" alt="Pizza" onerror="this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80'"><span class="food-tag">BEST SELLER</span></div><div class="food-info"><div><h3>Garden Pizza</h3><p>Cheesy, fresh & loaded</p></div><strong>₹349</strong></div></article>
+        <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" alt="Burger and fries"><span class="food-tag">GUEST FAVOURITE</span></div><div class="food-info"><div><h3>Smash Burger</h3><p>Juicy burger with crispy fries</p></div><strong>₹299</strong></div></article>
+        <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="Ramen bowl"></div><div class="food-info"><div><h3>Spicy Ramen</h3><p>Comfort in a bowl</p></div><strong>₹279</strong></div></article>
+        <article class="food-card"><div class="food-photo"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Dessert"><span class="food-tag">SWEET TREAT</span></div><div class="food-info"><div><h3>Choco Delight</h3><p>Rich chocolate dessert</p></div><strong>₹199</strong></div></article>
+      </div>
+    </section>
+
+    <section class="buffet-section" id="buffet">
+      <div class="buffet-image"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1100&q=85" alt="Buffet spread with delicious food"></div>
+      <div class="buffet-content"><div class="eyebrow">A FEAST FOR EVERY MOOD</div><h2>Buffet plans<br>made for <em>sharing.</em></h2><p>Bring your favourite people. Leave the decisions to us. Unlimited deliciousness and a table full of memories.</p>
+        <div class="buffet-plans">
+          <div class="plan"><div><strong>Classic Feast</strong><small>Veg buffet · 2 hours</small></div><b>₹599 <small>/ person</small></b></div>
+          <div class="plan featured"><div><strong>Premium Feast ✨</strong><small>Veg & non-veg · 2 hours</small></div><b>₹899 <small>/ person</small></b></div>
+          <div class="plan"><div><strong>Family Feast</strong><small>Kids-friendly · group fun</small></div><b>₹1,099 <small>/ person</small></b></div>
+        </div><a href="#booking" class="btn btn-primary">Reserve buffet <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section games-section" id="games">
+      <div class="games-copy"><div class="eyebrow">MORE THAN A MEAL</div><h2>Play a little.<br><em>Laugh a lot.</em></h2><p>Turn dinner into a mini celebration. Try our lucky wheel and explore game-night fun while you're here.</p>
+        <div class="game-chips"><span>🎲 Board games</span><span>🃏 Card games</span><span>🎯 Party games</span></div>
+      </div>
+      <div class="wheel-card"><div class="wheel-title"><span>🎁</span><div><strong>Spin & win!</strong><small>Try your luck for a surprise</small></div></div><div class="wheel-area"><div class="pointer">▼</div><div class="wheel" id="wheel"><div class="wheel-labels"><span>🍰 Dessert</span><span>🥤 Drink</span><span>✨ 10% off</span><span>🎉 Try again</span><span>🍟 Fries</span><span>🎁 Surprise</span></div></div></div><button class="btn btn-primary spin-btn" id="spin">Spin the wheel</button><p class="wheel-result" id="wheelResult">One spin per visit — good luck!</p></div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-intro"><div class="eyebrow">YOUR TABLE IS WAITING</div><h2>Let's make it<br><em>a delicious day.</em></h2><p>Planning a date, family dinner or a celebration? Tell us a little about your visit.</p><div class="booking-perks"><span>✓ Cozy atmosphere</span><span>✓ Freshly prepared food</span><span>✓ Fun for everyone</span></div></div>
+      <form class="booking-form" id="bookingForm">
+        <h3>Reserve your table</h3><p class="form-subtitle">Fill in your details to request a reservation.</p>
+        <div class="form-row"><label>Your name<input name="name" placeholder="e.g. Alex Sharma" required></label><label>Phone number<input name="phone" placeholder="10-digit mobile" pattern="[0-9+ -]{8,15}"></label></div>
+        <div class="form-row"><label>Date<input name="date" type="date" required></label><label>Time<select name="time" required><option value="">Select time</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>4:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label></div>
+        <div class="form-row"><label>Guests<select name="guests" required><option value="">Number of guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7-10</option><option>10+</option></select></label><label>Buffet package<select name="buffet"><option>No buffet</option><option>Classic Feast - ₹599</option><option>Premium Feast - ₹899</option><option>Family Feast - ₹1,099</option></select></label></div>
+        <label>Special requests<textarea name="requests" rows="2" placeholder="Birthday, seating preference, allergies..."></textarea></label>
+        <button type="submit" class="btn btn-primary submit-btn">Request reservation <span>→</span></button><p class="form-footnote">Demo booking request. Confirmation shown instantly; no payment required.</p><div class="booking-message" id="bookingMessage" role="status"></div>
+      </form>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-icon">✦</span> Feast<span class="amp">&</span>Fun</a><p>Good food, great people, and happy memories.</p><span class="footer-copy">© 2026 Feast & Fun · Made with ❤️</span></footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
